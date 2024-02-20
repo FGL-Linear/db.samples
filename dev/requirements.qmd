@@ -1,0 +1,15 @@
+Design a SQL database made in DuckDB to keep track of laboratory samples.
+
+1.  Made in DuckDB.
+
+2.  Some samples are commercial samples and have an associated supplier, reference and lot.
+
+    1.  A supplier can have multiple references.
+
+    2.  Each reference can have multiple lots.
+
+3.  Some samples are made by mixing other samples.
+
+4.  Some samples are made by spiking other samples with certain concentration of analyte.
+
+5.  The full lineage of a sample must be recorded.

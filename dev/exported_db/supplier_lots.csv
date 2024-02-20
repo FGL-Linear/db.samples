@@ -1,0 +1,3 @@
+id_sample,id_supplier,reference,lot,date_manufacture,date_expiry
+1,1,RandoxRef1,RandoxRef1Lot1,2021-01-01,2024-01-31
+2,1,RandoxRef1,RandoxRef1Lot2,2022-01-01,2025-01-31
