@@ -131,3 +131,47 @@ DBI::dbDisconnect(con, shutdown = TRUE)
 ```{sql connection=con}
 DROP TABLE dict_units
 ```
+
+## (Untested) ChatGPT query to find original lot
+
+you can find the original lot for any given lot by traversing the chain of transformations recursively. You can achieve this with a recursive common table expression (CTE) in SQL. Here's how you can build a query to find the original lot for a given lot:
+
+```{sql connection=con}
+
+WITH RECURSIVE LotChain AS (
+    -- Anchor query: Start with the given lot
+    SELECT original_id_supplier, original_reference, original_lot, new_id_supplier, new_reference, new_lot
+    FROM lot_changes
+    WHERE new_id_supplier = ?  -- Specify the ID of the given lot
+      AND new_reference = ?     -- Specify the reference of the given lot
+      AND new_lot = ?           -- Specify the lot number of the given lot
+  UNION ALL
+    -- Recursive query: Traverse the chain of transformations
+    SELECT lc.original_id_supplier, lc.original_reference, lc.original_lot, lc.new_id_supplier, lc.new_reference, lc.new_lot
+    FROM LotChain AS l
+    JOIN lot_changes AS lc
+    ON l.original_id_supplier = lc.new_id_supplier
+       AND l.original_reference = lc.new_reference
+       AND l.original_lot = lc.new_lot
+)
+-- Query to find the original lot
+SELECT original_id_supplier, original_reference, original_lot
+FROM LotChain
+ORDER BY original_id_supplier, original_reference, original_lot
+LIMIT 1;
+
+```
+
+In this query:
+
+-   Replace **`?`** with the ID, reference, and lot number of the given lot for which you want to find the original lot.
+
+-   The **`LotChain`** CTE recursively traverses the chain of transformations starting from the given lot.
+
+-   The anchor query selects the initial lot specified by the given ID, reference, and lot number.
+
+-   The recursive query joins the **`LotChain`** with the **`lot_changes`** table to find the previous transformation for each lot in the chain.
+
+-   The final query selects the original lot from the **`LotChain`** CTE and orders the results by supplier ID, reference, and lot number. It limits the result to only the first original lot found.
+
+This query will provide you with the original lot for a given lot, even if it has undergone multiple transformations.
