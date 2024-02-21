@@ -1,0 +1,409 @@
+id_sample,version,parameter,value
+22,1,Albumin,2.89
+22,1,ALP,429.0
+22,1,ALT/GPT,134.0
+22,1,Amylase,317.0
+22,1,AST/GOT,141.0
+22,1,Bilirubin Direct,1.64
+22,1,Bilirubin Direct DPD,1.5
+22,1,Bilirubin Total,5.48
+22,1,Bilirubin total (no bk),4.96
+22,1,Calcium OCC,12.2
+22,1,Calcium Arsenazo,12.2
+22,1,Chloride,112.0
+22,1,Cholesterol,274.0
+22,1,Cholinesterase,5090.0
+22,1,CK BR,471.0
+22,1,Creatinine,3.58
+22,1,GGT,161.0
+22,1,Glucose,276.0
+22,1,Iron Cromazurol,205.0
+22,1,Iron Ferrozine,205.0
+22,1,LDH,709.0
+22,1,Lipase,83.3
+22,1,Magnesium BR,5.07
+22,1,Magnesium MR,5.07
+22,1,Phosphorus UV,7.32
+22,1,Potassium,6.15
+22,1,Sodium,164.0
+22,1,Total Protein,5.16
+22,1,Triglycerides,253.0
+22,1,Urea/BUN,122.0
+22,1,Uric Acid,9.14
+22,2,ALP,409.0
+22,3,Calcium OCC,13.1
+20,1,Albumin,3.89
+20,1,ALP,233.0
+20,1,ALT/GPT,38.0
+20,1,Amylase,100.0
+20,1,AST/GOT,37.0
+20,1,Bilirubin Direct,0.62
+20,1,Bilirubin Direct (no bk),0.5
+20,1,Bilirubin Direct DPD,1.33
+20,1,Bilirubin Total,1.72
+20,1,Bilirubin total (no bk),1.38
+20,1,Calcium OCC,8.7
+20,1,Calcium Arsenazo,8.7
+20,1,Chloride,93.0
+20,1,Cholesterol,162.0
+20,1,Cholinesterase,5510.0
+20,1,CK BR,214.0
+20,1,Creatinine,1.38
+20,1,GGT,50.0
+20,1,Glucose,111.0
+20,1,Iron Cromazurol,105.0
+20,1,Iron Ferrozine,115.0
+20,1,LDH,390.0
+20,1,Lipase,41.9
+20,1,Magnesium BR,2.51
+20,1,Magnesium MR,2.32
+20,1,Phosphorus UV,4.25
+20,1,Potassium,4.7
+20,1,Potassium ISE direct,4.54
+20,1,Potassium ISE indirect,4.27
+20,1,Sodium,143.0
+20,1,Sodium ISE direct,148.0
+20,1,Sodium ISE indirect,143.0
+20,1,TIBC,201.0
+20,1,Total Protein,6.05
+20,1,Triglycerides,95.0
+20,1,Urea/BUN,43.0
+20,1,Uric Acid,6.06
+20,2,ALP,223.0
+20,3,Calcium OCC,8.05
+21,1,Albumin,3.02
+21,1,ALP,443.0
+21,1,ALT/GPT,132.0
+21,1,Amylase,298.0
+21,1,AST/GOT,150.0
+21,1,Bilirubin Direct,2.17
+21,1,Bilirubin Direct (no bk),1.34
+21,1,Bilirubin Direct DPD,1.95
+21,1,Bilirubin Total,5.86
+21,1,Bilirubin total (no bk),4.26
+21,1,Calcium OCC,12.5
+21,1,Calcium Arsenazo,12.5
+21,1,Chloride,105.0
+21,1,Cholesterol,303.0
+21,1,Cholinesterase,5020.0
+21,1,CK BR,485.0
+21,1,Creatinine,3.66
+21,1,GGT,173.0
+21,1,Glucose,278.0
+21,1,Iron Cromazurol,204.0
+21,1,Iron Ferrozine,190.0
+21,1,LDH,730.0
+21,1,Lipase,83.1
+21,1,Magnesium BR,4.7
+21,1,Magnesium MR,4.88
+21,1,Phosphorus UV,6.67
+21,1,Potassium,6.52
+21,1,Potassium ISE direct,6.92
+21,1,Potassium ISE indirect,6.52
+21,1,Sodium,160.0
+21,1,Sodium ISE direct,166.0
+21,1,Sodium ISE indirect,160.0
+21,1,TIBC,250.0
+21,1,Total Protein,4.48
+21,1,Triglycerides,250.0
+21,1,Urea/BUN,123.0
+21,1,Uric Acid,9.6
+21,2,ALP,422.0
+21,3,Calcium OCC,8.05
+27,1,Albumin,4.0
+27,1,ALP,219.0
+27,1,ALT/GPT,39.0
+27,1,Amylase,93.0
+27,1,AST/GOT,40.0
+27,1,Bilirubin Direct,0.63
+27,1,Bilirubin Direct (no bk),0.74
+27,1,Bilirubin Direct DPD,1.33
+27,1,Bilirubin Total,1.92
+27,1,Bilirubin total (no bk),1.62
+27,1,Calcium OCC,7.7
+27,1,Calcium Arsenazo,9.3
+27,1,Chloride,93.0
+27,1,Cholesterol,174.0
+27,1,Cholinesterase,5557.0
+27,1,CK BR,214.0
+27,1,Creatinine,1.3
+27,1,GGT,49.0
+27,1,Glucose,114.0
+27,1,Iron Cromazurol,110.0
+27,1,Iron Ferrozine,98.9
+27,1,LDH,378.0
+27,1,Lipase,38.8
+27,1,Magnesium BR,2.54
+27,1,Magnesium MR,2.39
+27,1,Phosphorus UV,4.7
+27,1,Potassium,4.36
+27,1,Potassium ISE direct,4.16
+27,1,Potassium ISE indirect,3.92
+27,1,Sodium,132.0
+27,1,Sodium ISE direct,147.0
+27,1,Sodium ISE indirect,136.0
+27,1,TIBC,211.0
+27,1,Total Protein,6.09
+27,1,Triglycerides,91.0
+27,1,Urea/BUN,44.7
+27,1,Uric Acid,5.98
+27,2,Calcium OCC,8.05
+27,4,Creatinine,1.49
+28,1,Albumin,3.0
+28,1,ALP,432.0
+28,1,ALT/GPT,129.0
+28,1,Amylase,287.0
+28,1,AST/GOT,143.0
+28,1,Bilirubin Direct,1.96
+28,1,Bilirubin Direct (no bk),1.61
+28,1,Bilirubin Direct DPD,1.97
+28,1,Bilirubin Total,5.19
+28,1,Bilirubin total (no bk),4.78
+28,1,Calcium OCC,11.9
+28,1,Calcium Arsenazo,12.0
+28,1,Chloride,105.0
+28,1,Cholesterol,306.0
+28,1,Cholinesterase,5370.0
+28,1,CK BR,582.0
+28,1,Creatinine,3.5
+28,1,GGT,166.0
+28,1,Glucose,272.0
+28,1,Iron Cromazurol,205.0
+28,1,Iron Ferrozine,205.0
+28,1,LDH,754.0
+28,1,Lipase,57.2
+28,1,Magnesium BR,4.43
+28,1,Magnesium MR,4.54
+28,1,Phosphorus UV,6.9
+28,1,Potassium,6.03
+28,1,Potassium ISE direct,6.14
+28,1,Potassium ISE indirect,5.97
+28,1,Sodium,154.0
+28,1,Sodium ISE direct,164.0
+28,1,Sodium ISE indirect,153.0
+28,1,TIBC,206.0
+28,1,Total Protein,4.95
+28,1,Triglycerides,249.0
+28,1,Urea/BUN,112.0
+28,1,Uric Acid,9.5
+28,2,Calcium OCC,12.3
+28,4,Creatinine,4.0
+29,1,Albumin,3.0
+29,1,ALP,425.0
+29,1,ALT/GPT,143.0
+29,1,Amylase,341.0
+29,1,AST/GOT,137.0
+29,1,Bilirubin Direct,1.88
+29,1,Bilirubin Direct (no bk),2.24
+29,1,Bilirubin Direct DPD,2.11
+29,1,Bilirubin Total,5.49
+29,1,Bilirubin total (no bk),6.12
+29,1,Calcium OCC,12.4
+29,1,Calcium Arsenazo,12.4
+29,1,Chloride,115.0
+29,1,Cholesterol,285.0
+29,1,Cholinesterase,5230.0
+29,1,CK BR,520.0
+29,1,Creatinine,4.0
+29,1,GGT,188.0
+29,1,Glucose,281.0
+29,1,Iron Cromazurol,247.0
+29,1,Iron Ferrozine,214.0
+29,1,LDH,669.0
+29,1,Lipase,70.0
+29,1,Magnesium BR,5.57
+29,1,Magnesium MR,5.42
+29,1,Phosphorus UV,7.8
+29,1,Potassium,6.34
+29,1,Sodium,165.0
+29,1,TIBC,228.0
+29,1,Total Protein,5.63
+29,1,Triglycerides,250.0
+29,1,Urea/BUN,129.0
+29,1,Uric Acid,9.6
+29,2,Calcium OCC,13.4
+29,4,Creatinine,3.66
+34,1,Albumin,3.03
+34,1,ALP,433.0
+34,1,ALT/GPT,137.0
+34,1,Amylase,290.0
+34,1,AST/GOT,137.0
+34,1,Bilirubin Direct,1.72
+34,1,Bilirubin Direct (no bk),2.32
+34,1,Bilirubin Direct DPD,1.63
+34,1,Bilirubin Total,5.84
+34,1,Bilirubin total (no bk),6.14
+34,1,Calcium OCC,12.3
+34,1,Calcium Arsenazo,12.3
+34,1,Chloride,116.0
+34,1,Cholesterol,278.0
+34,1,Cholinesterase,5283.0
+34,1,CK BR,436.0
+34,1,Creatinine,3.18
+34,1,GGT,178.0
+34,1,Glucose,278.0
+34,1,Iron Cromazurol,238.0
+34,1,Iron Ferrozine,222.0
+34,1,LDH,745.0
+34,1,Lipase,64.0
+34,1,Magnesium BR,5.59
+34,1,Magnesium MR,5.21
+34,1,Phosphorus UV,6.67
+34,1,Potassium,6.07
+34,1,Sodium,164.0
+34,1,TIBC,240.0
+34,1,Total Protein,4.57
+34,1,Triglycerides,250.0
+34,1,Urea/BUN,118.0
+34,1,Uric Acid,9.37
+34,2,Creatinine,3.6
+38,1,Albumin,3.98
+38,1,ALP,264.0
+38,1,ALT/GPT,37.8
+38,1,Amylase,94.5
+38,1,AST/GOT,37.9
+38,1,Bilirubin Direct,0.6
+38,1,Bilirubin Direct (no bk),0.84
+38,1,Bilirubin Direct DPD,1.29
+38,1,Bilirubin Total,1.83
+38,1,Bilirubin total (no bk),1.88
+38,1,Calcium OCC,7.91
+38,1,Calcium Arsenazo,7.91
+38,1,Chloride,95.5
+38,1,Cholesterol,158.0
+38,1,Cholinesterase,5950.0
+38,1,CK BR,242.0
+38,1,Creatinine,1.27
+38,1,GGT,50.7
+38,1,Glucose,114.0
+38,1,Iron Cromazurol,121.0
+38,1,Iron Ferrozine,115.0
+38,1,LDH,430.0
+38,1,Lipase,39.0
+38,1,Magnesium BR,2.43
+38,1,Magnesium MR,3.04
+38,1,Phosphorus UV,4.31
+38,1,Potassium,4.48
+38,1,Potassium ISE direct,3.94
+38,1,Potassium ISE indirect,4.38
+38,1,Sodium,144.0
+38,1,Sodium ISE direct,136.0
+38,1,Sodium ISE indirect,146.0
+38,1,TIBC,275.0
+38,1,Total Protein,5.98
+38,1,Triglycerides,93.8
+38,1,Urea/BUN,44.0
+38,1,Uric Acid,5.76
+39,1,Albumin,3.03
+39,1,ALP,474.0
+39,1,ALT/GPT,136.0
+39,1,Amylase,299.0
+39,1,AST/GOT,147.0
+39,1,Bilirubin Direct,2.06
+39,1,Bilirubin Direct (no bk),1.64
+39,1,Bilirubin Direct DPD,1.77
+39,1,Bilirubin Total,5.13
+39,1,Bilirubin total (no bk),4.9
+39,1,Calcium OCC,11.4
+39,1,Calcium Arsenazo,11.4
+39,1,Chloride,106.0
+39,1,Cholesterol,276.0
+39,1,Cholinesterase,5335.0
+39,1,CK BR,534.0
+39,1,Creatinine,3.64
+39,1,GGT,168.0
+39,1,Glucose,268.0
+39,1,Iron Cromazurol,195.0
+39,1,Iron Ferrozine,207.0
+39,1,LDH,764.0
+39,1,Lipase,65.0
+39,1,Magnesium BR,5.12
+39,1,Magnesium MR,4.91
+39,1,Phosphorus UV,6.45
+39,1,Potassium,5.98
+39,1,Potassium ISE direct,5.92
+39,1,Potassium ISE indirect,6.36
+39,1,Sodium,159.0
+39,1,Sodium ISE direct,154.0
+39,1,Sodium ISE indirect,162.0
+39,1,TIBC,240.0
+39,1,Total Protein,4.76
+39,1,Triglycerides,250.0
+39,1,Urea/BUN,113.0
+39,1,Uric Acid,9.06
+39,2,Creatinine,3.99
+41,1,Albumin,3.23
+41,1,ALP,445.0
+41,1,ALT/GPT,133.0
+41,1,Amylase,293.0
+41,1,AST/GOT,138.0
+41,1,Bilirubin Direct,2.08
+41,1,Bilirubin Direct (no bk),2.08
+41,1,Bilirubin Direct DPD,2.05
+41,1,Bilirubin Total,5.97
+41,1,Bilirubin total (no bk),5.97
+41,1,Bilirubin total DPD,5.02
+41,1,Calcium OCC,12.7
+41,1,Calcium Arsenazo,12.7
+41,1,Chloride,111.0
+41,1,Cholesterol,280.0
+41,1,Cholinesterase,5385.0
+41,1,CK BR,502.0
+41,1,Creatinine,4.07
+41,1,GGT,181.0
+41,1,Glucose,285.0
+41,1,Iron Cromazurol,248.0
+41,1,Iron Ferrozine,248.0
+41,1,LDH,729.0
+41,1,Lipase,71.5
+41,1,Magnesium BR,5.0
+41,1,Magnesium MR,5.5
+41,1,Phosphorus UV,8.2
+41,1,Potassium,6.29
+41,1,Potassium ISE direct,5.98
+41,1,Potassium ISE indirect,6.12
+41,1,Sodium,156.0
+41,1,Sodium ISE direct,154.0
+41,1,Sodium ISE indirect,157.0
+41,1,TIBC,253.0
+41,1,Total Protein,6.3
+41,1,Triglycerides,258.0
+41,1,Urea/BUN,113.0
+41,1,Uric Acid,9.19
+42,1,Albumin,4.02
+42,1,ALP,248.0
+42,1,ALT/GPT,39.2
+42,1,Amylase,96.0
+42,1,AST/GOT,38.6
+42,1,Bilirubin Direct,1.17
+42,1,Bilirubin Direct (no bk),1.02
+42,1,Bilirubin Direct DPD,1.17
+42,1,Bilirubin Total,1.92
+42,1,Bilirubin total (no bk),1.92
+42,1,Calcium OCC,8.3
+42,1,Calcium Arsenazo,8.3
+42,1,Chloride,110.0
+42,1,Cholesterol,178.0
+42,1,Cholinesterase,5878.0
+42,1,CK BR,243.0
+42,1,Creatinine,1.36
+42,1,GGT,46.3
+42,1,Glucose,110.0
+42,1,Iron Cromazurol,135.0
+42,1,Iron Ferrozine,135.0
+42,1,LDH,382.0
+42,1,Lipase,38.9
+42,1,Magnesium BR,2.28
+42,1,Magnesium MR,2.28
+42,1,Phosphorus UV,4.71
+42,1,Potassium,4.35
+42,1,Potassium ISE direct,5.82
+42,1,Potassium ISE indirect,3.88
+42,1,Sodium,154.0
+42,1,Sodium ISE direct,154.0
+42,1,Sodium ISE indirect,136.0
+42,1,TIBC,260.0
+42,1,Total Protein,6.18
+42,1,Triglycerides,90.3
+42,1,Urea/BUN,45.5
+42,1,Uric Acid,5.54

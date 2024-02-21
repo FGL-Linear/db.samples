@@ -1,6 +1,6 @@
 Design a SQL database made in DuckDB to keep track of laboratory samples.
 
-1.  Made in DuckDB.
+1.  Made in DuckDB (Consider if it's really better than SQLite. DuckDB does not support ON DELETE CASCADE / ON UPDATE CASCADE in foreign keys)
 
 2.  Some samples are commercial samples and have an associated supplier, reference and lot.
 

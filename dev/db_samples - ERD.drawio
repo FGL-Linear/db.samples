@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-21T07:41:14.435Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="4QRfsWuEbqA_PoyXKnHP" version="23.1.5" type="device">
+<mxfile host="app.diagrams.net" modified="2024-02-21T13:13:46.787Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="B5bBDYK1NC0LFPQ4Zgaf" version="23.1.5" type="device">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="1434" dy="-362" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -504,7 +504,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="lwX7J6Ly3YBsjcsa1D8H-1" value="&lt;h1&gt;NOTAS:&lt;/h1&gt;&lt;div&gt;- Especificar unidades de mezclas.&lt;/div&gt;&lt;div&gt;- Añadir opción de hacer &quot;Spike&quot; (quizás&lt;/div&gt;&lt;div&gt;especificando unidades de masa en vez de&amp;nbsp;&lt;/div&gt;&lt;div&gt;volumen, aunque si la masa desplaza el volumen...).&lt;/div&gt;&lt;div&gt;- A nivel de lógica de aplicación, se tiene que comprobar que un id_sample solo está en una de las tablas de tipo de muestra.&lt;/div&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+        <mxCell id="lwX7J6Ly3YBsjcsa1D8H-1" value="&lt;h1&gt;NOTAS:&lt;/h1&gt;&lt;div&gt;- DESACTUALIZADO: ahora la base de datos cuenta con las tablas que antes estaban en la app insert_maker, con algunos cambios.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Especificar unidades de mezclas.&lt;/div&gt;&lt;div&gt;- Añadir opción de hacer &quot;Spike&quot; (quizás&lt;/div&gt;&lt;div&gt;especificando unidades de masa en vez de&amp;nbsp;&lt;/div&gt;&lt;div&gt;volumen, aunque si la masa desplaza el volumen...).&lt;/div&gt;&lt;div&gt;- A nivel de lógica de aplicación, se tiene que comprobar que un id_sample solo está en una de las tablas de tipo de muestra.&lt;/div&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="20" y="1525" width="210" height="245" as="geometry" />
         </mxCell>
         <mxCell id="OQtxZ8kjXkehAy-goMJj-20" value="dict_units" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1" collapsed="1">

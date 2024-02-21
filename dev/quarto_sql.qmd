@@ -91,6 +91,59 @@ CREATE TABLE lot_changes (
     FOREIGN KEY (original_id_supplier, original_reference, original_lot) REFERENCES supplier_lots(id_supplier, reference, lot),
     FOREIGN KEY (new_id_supplier, new_reference, new_lot) REFERENCES supplier_lots(id_supplier, reference, lot)
 );
+
+CREATE TABLE analytes (
+  analyte TEXT PRIMARY KEY
+);
+
+CREATE TABLE methods (
+  parameter TEXT PRIMARY KEY,
+  analyte TEXT REFERENCES analytes(analyte),
+  method TEXT,
+  f_sd_cn FLOAT NOT NULL,
+  f_sd_ca FLOAT NOT NULL,
+  units TEXT NOT NULL,
+  FOREIGN KEY (analyte) REFERENCES analytes(analyte)
+);
+
+CREATE TABLE sample_versions (
+  id_sample INTEGER,
+  version INTEGER,
+  date_version DATE,
+  PRIMARY KEY(id_sample, version),
+  FOREIGN KEY (id_sample) REFERENCES samples(id_sample)
+);
+
+CREATE TABLE sample_values (
+  id_sample INTEGER,
+  version INTEGER,
+  parameter TEXT,
+  value FLOAT,
+  PRIMARY KEY(id_sample, version, parameter),
+  FOREIGN KEY (id_sample, version) REFERENCES sample_versions(id_sample, version),
+  FOREIGN KEY (parameter) REFERENCES methods(parameter)
+);
+
+CREATE TABLE alt_units(
+  analyte TEXT PRIMARY KEY,
+  alt_units TEXT,
+  f_alt_units FLOAT,
+  FOREIGN KEY (analyte) REFERENCES analytes(analyte)
+);
+
+CREATE TABLE alt_temp(
+  parameter TEXT PRIMARY KEY,
+  f_t1_t2 REAL,
+  f_t1_t3 REAL
+);
+
+CREATE TABLE esp(
+  analyte TEXT PRIMARY KEY,
+  spanish TEXT,
+  FOREIGN KEY (analyte) REFERENCES analytes(analyte)
+)
+    
+    
 ```
 
 ## Import
@@ -104,6 +157,13 @@ lot_changes <- readxl::read_excel(xlsx_path, sheet = "lot_changes")
 sample_categories <- readxl::read_excel(xlsx_path, sheet = "sample_categories")
 samples <- readxl::read_excel(xlsx_path, sheet = "samples")
 sample_others <- readxl::read_excel(xlsx_path, sheet = "sample_others")
+analytes <- readxl::read_excel(xlsx_path, sheet = "analytes")
+methods <- readxl::read_excel(xlsx_path, sheet = "methods")
+sample_versions <- readxl::read_excel(xlsx_path, sheet = "sample_versions")
+sample_values <- readxl::read_excel(xlsx_path, sheet = "sample_values")
+alt_units <- readxl::read_excel(xlsx_path, sheet = "alt_units")
+alt_temp <- readxl::read_excel(xlsx_path, sheet = "alt_temp")
+esp <- readxl::read_excel(xlsx_path, sheet = "esp")
 
 DBI::dbAppendTable(con, "sample_categories", sample_categories)
 DBI::dbAppendTable(con, "samples", samples)
@@ -112,6 +172,21 @@ DBI::dbAppendTable(con, "suppliers", suppliers)
 DBI::dbAppendTable(con, "supplier_references", supplier_references)
 DBI::dbAppendTable(con, "supplier_lots", supplier_lots)
 DBI::dbAppendTable(con, "lot_changes", lot_changes)
+DBI::dbAppendTable(con, "analytes", analytes)
+DBI::dbAppendTable(con, "methods", methods)
+DBI::dbAppendTable(con, "sample_versions", sample_versions)
+DBI::dbAppendTable(con, "sample_values", sample_values)
+DBI::dbAppendTable(con, "alt_units", alt_units)
+DBI::dbAppendTable(con, "alt_temp", alt_temp)
+DBI::dbAppendTable(con, "esp", esp)
+```
+
+## Disconnect
+
+```{r}
+
+DBI::dbDisconnect(con, shutdown = TRUE)
+
 ```
 
 ## INSERTS
@@ -133,13 +208,6 @@ DBI::dbWithTransaction(
     DBI::dbSendQuery(con, child_query)
   }
 )
-```
-
-## Disconnect
-
-```{r}
-
-DBI::dbDisconnect(con, shutdown = TRUE)
 ```
 
 ## Drop table

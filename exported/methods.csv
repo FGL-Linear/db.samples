@@ -1,0 +1,39 @@
+parameter,analyte,method,f_sd_cn,f_sd_ca,units
+Albumin,Albumin,Bromocresol green,0.077,0.076,g/dL
+ALP,ALP,Diethanolamine buffer DEA,0.076,0.076,U/L
+ALT/GPT,ALT/GPT,Tris no P5P IFCC/sfbc,0.1,0.1,U/L
+Amylase,Amylase,Total. T. Liquid stable pNPG 37°C,0.077,0.075,U/L
+AST/GOT,AST/GOT,Tris no P5P IFCC/sfbc,0.102,0.102,U/L
+Bilirubin Direct,Bilirubin Direct,With sample blank Modified J&G,0.103,0.109,mg/dL
+Bilirubin Direct (no bk),Bilirubin Direct,Without sample blank Modified J&G,0.103,0.109,mg/dL
+Bilirubin Direct DPD,Bilirubin Direct,DPD,0.107,0.108,mg/dL
+Bilirubin Total,Bilirubin Total,With sample blank Modified J&G,0.107,0.107,mg/dL
+Bilirubin total (no bk),Bilirubin Total,Without sample blank Modified J&G,0.107,0.107,mg/dL
+Bilirubin total DPD,Bilirubin Total,DPD,0.1,0.1,mg/dL
+Calcium OCC,Calcium,Cresolphtalein complexone OC,0.05,0.05,mg/dL
+Calcium Arsenazo,Calcium,Arsenazo III,0.05,0.05,mg/dL
+Chloride,Chloride,Colorimetric,0.04,0.048,mmol/L
+Cholesterol,Cholesterol,Cholesterol Oxidase,0.065,0.066,mg/dL
+Cholinesterase,Cholinesterase,Enzymatic butyrylthiocholin,0.1,0.1,U/L
+CK BR,CK Total,CK-NAC substrate start (DGKC),0.09,0.09,U/L
+Creatinine,Creatinine,Creatinine Enzymatic,0.1,0.1,mg/dL
+GGT,GGT,g-glutamyl-4-carbo-4-nitroanilide,0.075,0.075,U/L
+Glucose,Glucose,Glucose Oxidase,0.075,0.075,mg/dL
+Iron Cromazurol,Iron,Cromazurol,0.09,0.09,μg/dL
+Iron Ferrozine,Iron,Ferrozine,0.09,0.09,μg/dL
+LDH,LDH,Pyruvate -> Lactate SFBC,0.075,0.075,U/L
+Lipase,Lipase,"Enymatic colorimetric, 37°C",0.1,0.1,U/L
+Magnesium BR,Magnesium,"Calmagite, BR",0.063,0.063,mg/dL
+Magnesium MR,Magnesium,"Calmagite, MR",0.09,0.062,mg/dL
+Phosphorus UV,Phosphorus,Phosphomolybdate UV,0.075,0.075,mg/dL
+Potassium,Potassium,Kinetic,0.051,0.051,mmol/L
+Potassium ISE direct,Potassium,ISE direct,0.05,0.05,mmol/L
+Potassium ISE indirect,Potassium,ISE indirect,0.05,0.05,mmol/L
+Sodium,Sodium,Kinetic,0.05,0.05,mmol/L
+Sodium ISE direct,Sodium,ISE direct,0.05,0.05,mmol/L
+Sodium ISE indirect,Sodium,ISE indirect,0.05,0.05,mmol/L
+TIBC,TIBC,Saturation,0.105,0.106,μg/dL
+Total Protein,Total Protein,Biuret endpoint,0.1,0.1,g/dL
+Triglycerides,Triglycerides,Lipase/GOD-PAP no correction,0.08,0.081,mg/dL
+Urea/BUN,Urea/BUN,UV Enzymatic,0.075,0.075,mg/dL
+Uric Acid,Uric Acid,Uricase/peroxidase,0.066,0.066,mg/dL
