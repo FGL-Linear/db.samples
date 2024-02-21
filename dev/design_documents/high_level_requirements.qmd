@@ -1,0 +1,74 @@
+### High-Level Requirements
+
+#### 1. Purpose:
+
+-   Develop a laboratory sample management system to efficiently track and manage various types of samples, including supplier samples, lab-prepared samples, and sample mixtures.
+
+#### 2. Scope:
+
+-   The system will allow laboratory technicians to:
+
+    -   Record details of supplier samples, including supplier information, references, and lot numbers.
+
+    -   Document lab-prepared samples, specifying relevant attributes and characteristics.
+
+    -   Create sample mixtures by combining multiple parent samples with specified quantities.
+
+    -   Track the lineage of samples, including transformations and changes over time.
+
+    -   Manage analyte values associated with each sample.
+
+### 3. Functional Requirements:
+
+-   **Sample Management**:
+
+    -   Ability to add, view, update, and delete samples of different categories.
+    -   Support for recording supplier samples, lab-prepared samples, and sample mixtures.
+    -   Functionality to specify attributes such as supplier information, references, lot numbers, and descriptions.
+
+-   **Sample Lineage Tracking**:
+
+    -   Capability to track the lineage of samples, including transformations and changes over time.
+    -   Support for recording lot changes and transformations between samples.
+
+-   **Sample Value Management**:
+
+    -   Feature to add, update, and delete analyte values with each sample.
+    -   Ability to record values for different parameters and analytes.
+    -   Support for version-controlled values for samples, including supplier samples and others.
+    -   Versioning functionality for managing changes to sample values, allowing for the creation of new versions with updated or corrected values.
+    -   Integration with the versioning system to associate sample values with specific versions of samples.
+    -   Version history tracking to maintain a record of changes made to sample values over time.
+
+-   **User Interface**:
+
+    -   Intuitive user interface allowing technicians to easily interact with and manage samples and their associated values.
+    -   Search and selection functionality to facilitate the selection of parent samples for mixtures.
+
+#### 4. Non-Functional Requirements:
+
+-   **Performance**:
+
+    -   The system should be responsive and able to handle a large volume of sample data efficiently.
+
+-   **Reliability**:
+
+    -   Data integrity should be maintained, and the system should be robust against errors and failures.
+
+-   **Security**:
+
+    -   Access control mechanisms should be implemented to ensure that only authorized users can view and modify sample data.
+
+-   **Usability**:
+
+    -   The user interface should be intuitive and user-friendly, requiring minimal training for laboratory technicians to use effectively.
+
+-   **Scalability**:
+
+    -   The system should be scalable to accommodate future growth in the number of samples and users.
+
+#### 5. Integration Requirements:
+
+-   **Database Integration**:
+
+    -   Integration with a DuckDB database to store and manage sample data efficiently.

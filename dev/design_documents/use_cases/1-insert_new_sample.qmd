@@ -1,0 +1,38 @@
+### Use Case 1: Inserting a New Sample
+
+#### Actors:
+
+-   Laboratory Technician: Responsible for entering new samples into the database.
+
+#### Preconditions:
+
+-   The laboratory technician has the necessary permissions to access the database.
+-   The laboratory technician has the required information about the sample to be entered, including its category, supplier information, lot details, and any associated values or measurements.
+
+#### Main Success Scenario:
+
+1.  The laboratory technician opens the sample insertion form in the application.
+2.  The technician enters the details of the new sample, including its category, supplier, reference, lot, date of manufacture, date of expiry, and any additional information.
+3.  The technician submits the form.
+4.  The application validates the entered data to ensure it meets the required constraints (e.g., mandatory fields are filled, date formats are correct, etc.).
+5.  If validation is successful, the application inserts the new sample record into the database.
+6.  The application displays a confirmation message indicating that the sample insertion was successful.
+
+#### Alternate Paths:
+
+-   **Invalid Data**: If the entered data fails validation, the application displays error messages indicating the specific validation errors. The technician corrects the errors and resubmits the form.
+-   **Cancellation**: If the technician decides to cancel the operation, they can close the form without submitting it, and no changes are made to the database.
+
+#### Postconditions:
+
+-   The new sample record is successfully inserted into the database.
+-   The database reflects the updated state with the addition of the new sample.
+
+#### Examples:
+
+-   **Example 1**: The laboratory technician enters a new commercial sample provided by Supplier A with reference number ABC123 and lot number 123456. The sample has a date of manufacture of 2024-02-28 and an expiry date of 2024-03-31.
+-   **Example 2**: The laboratory technician enters a new lab-prepared sample with a custom reference and lot number, along with relevant details such as date of manufacture and expiry.
+
+------------------------------------------------------------------------
+
+This example demonstrates how you can structure a use case for inserting a new sample into your database. You can adapt and expand upon this template to document other use cases for your application.

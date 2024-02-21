@@ -1,0 +1,37 @@
+### Use Case 2: Inserting a New Sample Mixture
+
+#### Actors:
+
+-   Laboratory Technician: Responsible for creating and managing sample mixtures in the database.
+
+#### Preconditions:
+
+-   The laboratory technician has the necessary permissions to access and modify sample data in the database.
+-   The technician has identified the attributes or descriptions of the parent samples to be included in the mixture.
+
+#### Main Success Scenario:
+
+1.  The laboratory technician opens the sample mixture creation form in the application.
+2.  The technician selects the option to create a new sample mixture.
+3.  The technician navigates to the section for specifying parent samples.
+4.  The technician uses the search functionality provided in the form to find and select the parent samples for the mixture based on their attributes or descriptions.
+5.  For each parent sample selected, the technician enters the quantity to be included in the mixture.
+6.  The technician submits the form to save the new sample mixture.
+7.  The application validates the entered data to ensure it meets the required constraints.
+8.  If validation is successful, the application inserts the new sample mixture record into the database.
+9.  The application displays a confirmation message indicating that the sample mixture has been successfully created.
+
+#### Alternate Paths:
+
+-   **Invalid Data**: If the entered data fails validation, the application displays error messages indicating the specific validation errors. The technician corrects the errors and resubmits the form.
+-   **Cancellation**: If the technician decides to cancel the operation, they can close the form without saving the changes, and no new sample mixture is created.
+
+#### Postconditions:
+
+-   The new sample mixture record is successfully inserted into the database.
+-   The database reflects the updated state with the addition of the new sample mixture.
+
+#### Examples:
+
+-   **Example 1**: The laboratory technician creates a new sample mixture by selecting Sample A (supplier sample with reference "ABC123") and Sample B (lab-prepared sample with description "Standard Solution") in a ratio of 1:2.
+-   **Example 2**: The technician creates a sample mixture consisting of Sample C (mixture sample with ID 789) and Sample D (supplier sample with supplier "Supplier X" and reference "XYZ456") in equal proportions.
