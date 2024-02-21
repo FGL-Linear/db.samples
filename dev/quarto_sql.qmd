@@ -93,12 +93,28 @@ CREATE TABLE lot_changes (
 );
 ```
 
-## INSERTS
+## Import
 
-```{sql connection=con}
+```{r}
+xlsx_path <- here::here("dev", "db samples.xlsx")
+suppliers <- readxl::read_excel(xlsx_path, sheet = "suppliers")
+supplier_references <- readxl::read_excel(xlsx_path, sheet = "supplier_references")
+supplier_lots <- readxl::read_excel(xlsx_path, sheet = "supplier_lots")
+lot_changes <- readxl::read_excel(xlsx_path, sheet = "lot_changes")
+sample_categories <- readxl::read_excel(xlsx_path, sheet = "sample_categories")
+samples <- readxl::read_excel(xlsx_path, sheet = "samples")
+sample_others <- readxl::read_excel(xlsx_path, sheet = "sample_others")
 
-INSERT INTO sample_categories(category) VALUES ('supplier')
+DBI::dbAppendTable(con, "sample_categories", sample_categories)
+DBI::dbAppendTable(con, "samples", samples)
+DBI::dbAppendTable(con, "sample_others", sample_others)
+DBI::dbAppendTable(con, "suppliers", suppliers)
+DBI::dbAppendTable(con, "supplier_references", supplier_references)
+DBI::dbAppendTable(con, "supplier_lots", supplier_lots)
+DBI::dbAppendTable(con, "lot_changes", lot_changes)
 ```
+
+## INSERTS
 
 ```{r}
 DBI::dbWithTransaction(
@@ -134,6 +150,8 @@ DROP TABLE dict_units
 
 ## (Untested) ChatGPT query to find original lot
 
+**Note**: It may be a good idea to try and enforce that for any new lot change this query is run first to directly link the new lot to the original lot in the chain.
+
 you can find the original lot for any given lot by traversing the chain of transformations recursively. You can achieve this with a recursive common table expression (CTE) in SQL. Here's how you can build a query to find the original lot for a given lot:
 
 ```{sql connection=con}
@@ -142,9 +160,9 @@ WITH RECURSIVE LotChain AS (
     -- Anchor query: Start with the given lot
     SELECT original_id_supplier, original_reference, original_lot, new_id_supplier, new_reference, new_lot
     FROM lot_changes
-    WHERE new_id_supplier = ?  -- Specify the ID of the given lot
-      AND new_reference = ?     -- Specify the reference of the given lot
-      AND new_lot = ?           -- Specify the lot number of the given lot
+    WHERE new_id_supplier = 1  -- Specify the ID of the given lot
+      AND new_reference = 1985099     -- Specify the reference of the given lot
+      AND new_lot = 19250           -- Specify the lot number of the given lot
   UNION ALL
     -- Recursive query: Traverse the chain of transformations
     SELECT lc.original_id_supplier, lc.original_reference, lc.original_lot, lc.new_id_supplier, lc.new_reference, lc.new_lot
