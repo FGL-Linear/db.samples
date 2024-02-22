@@ -1,0 +1,34 @@
+### Use Case 6: Print Table of Values for a Sample (Specific Version)
+
+#### Actors:
+
+-   Laboratory Technician: Responsible for managing sample data and generating reports.
+
+#### Preconditions:
+
+-   The user has the necessary permissions to access and view sample data.
+-   The sample for which the table of values is requested exists in the system.
+-   At least one version of analyte values is recorded for the sample.
+
+#### Main Success Scenario:
+
+1.  The laboratory technician navigates to the sample details page in the application.
+2.  The technician selects the desired sample from the available options.
+3.  The application displays a list of valid versions for the selected sample, along with their corresponding dates.
+4.  The technician selects the specific version of analyte values for which they want to print the table.
+5.  The application generates a printable report containing the table of values for the selected sample and version.
+6.  The technician prints the report using the appropriate printer or exports it to a digital format if desired.
+
+#### Alternate Paths:
+
+-   **Cancellation**: At any step during the process, the technician may choose to cancel the operation, returning to the previous screen.
+
+#### Postconditions:
+
+-   The report containing the table of values for the selected sample and version is successfully generated.
+-   The technician has a printed copy or digital file of the report for documentation or further analysis.
+
+#### Examples:
+
+-   **Example 1**: The laboratory technician selects Sample X from the list and chooses version 2, which is dated February 15, 2024, for printing. The application generates a report displaying the analyte values for Sample X, version 2.
+-   **Example 2**: The technician navigates to Sample Y but decides to cancel the operation after reviewing the available version options, opting to return to the previous screen without printing a report.

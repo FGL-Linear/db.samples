@@ -1,0 +1,28 @@
+**Use Case 3: Perform Lot Change Procedure**
+
+**Actor**: Laboratory Technician
+
+**Description**: This use case describes the process of performing a lot change procedure for a sample, where an existing lot of a supplier sample is transformed into a new lot.
+
+**Preconditions**: - The user is authenticated and authorized to perform lot change procedures. - The system is operational and accessible.
+
+**Basic Flow**: 1. **Initiate Lot Change Procedure**: - The user selects the option to perform a lot change procedure in the system.
+
+2.  **Select Sample**:
+    -   The system presents a list of samples eligible for lot change procedures.
+    -   The user selects the sample for which they want to perform the lot change procedure.
+3.  **Enter New Lot Information**:
+    -   The system prompts the user to enter the details of the new lot, including the supplier, reference, lot number, date of manufacture, and expiry date.
+    -   The user enters the required information for the new lot.
+4.  **Confirm Lot Change**:
+    -   The system displays a summary of the lot change details for review.
+    -   The user confirms the lot change procedure.
+5.  **Update Sample Information**:
+    -   The system updates the sample record with the information of the new lot.
+    -   The system retains a record of the original lot information for traceability purposes.
+
+**Alternate Flows**: - **Cancel Lot Change Procedure**: - At any step during the lot change procedure, the user may choose to cancel the operation. - The system aborts the lot change procedure and returns the user to the previous screen.
+
+**Postconditions**: - The sample record is updated with the information of the new lot. - The system maintains a record of the lot change procedure, including the original and new lot information.
+
+**Exceptions**: - **Invalid Input**: - If the user provides invalid or incomplete information for the new lot, the system prompts for correction and validation. - **System Error**: - If the system encounters an error during the lot change procedure, an error message is displayed, and the user is prompted to retry or contact support.

@@ -1,0 +1,70 @@
+**Use Case 5: Update or Add Analyte Values for Sample (Version n+1)**
+
+**Actor**: Laboratory Technician
+
+**Description**: This use case describes the process of updating or adding analyte values for a sample that already has at least one version of values recorded. The new or modified values will be added to a new version (version n+1) of analyte values associated with the sample.
+
+**Preconditions**:
+
+-   The user is authenticated and authorized to update or add analyte values for samples.
+
+-   The sample for which analyte values are to be updated or added exists in the system.
+
+-   At least one version of analyte values is already recorded for the sample.
+
+**Basic Flow**:
+
+1.  **Initiate Analyte Value Update/Addition**:
+
+    -   The user selects the option to update or add analyte values for an existing sample in the system.
+
+2.  **Select Sample and Version**:
+
+    -   The system presents a list of samples with existing versions of analyte values.
+    -   The user selects the sample for which they want to update or add analyte values and specifies the version to modify (latest version by default).
+
+3.  **Enter or Modify Analyte Values**:
+
+    -   The system retrieves the latest version of analyte values for the selected sample from the database.
+
+    -   The system displays a table with columns for parameters and corresponding value fields, populated with the latest values.
+
+    -   The user updates existing values or adds new values for parameters as needed.
+
+4.  **Review and Confirm**:
+
+    -   The system displays a summary of the updated or added analyte values for review.
+
+    -   The user verifies the correctness of the modifications.
+
+    -   The user confirms the update or addition of analyte values for the sample.
+
+5.  **Save Analyte Values**:
+
+    -   The system saves the updated or added analyte values for the sample as a new version (version n+1).
+
+    -   The system assigns a unique identifier (version number) to the set of analyte values for traceability.
+
+**Alternate Flows**:
+
+-   **Cancel Analyte Value Update/Addition**:
+
+    -   At any step during the analyte value update or addition process, the user may choose to cancel the operation.
+
+    -   The system aborts the update or addition process and returns the user to the previous screen.
+
+**Postconditions**:
+
+-   The updated or added analyte values are successfully saved for the sample as version n+1.
+
+-   The system maintains a record of the updated or added analyte values, associating them with the sample and version number.
+
+**Exceptions**:
+
+-   **Invalid Input**:
+
+    -   If the user provides invalid or incomplete values for any parameter, the system prompts for correction and validation.
+
+-   **System Error**:
+
+    -   If the system encounters an error during the analyte value update or addition process, an error message is displayed, and the user is prompted to retry or contact support.

@@ -32,7 +32,3 @@
 
 -   **Example 1**: The laboratory technician enters a new commercial sample provided by Supplier A with reference number ABC123 and lot number 123456. The sample has a date of manufacture of 2024-02-28 and an expiry date of 2024-03-31.
 -   **Example 2**: The laboratory technician enters a new lab-prepared sample with a custom reference and lot number, along with relevant details such as date of manufacture and expiry.
-
-------------------------------------------------------------------------
-
-This example demonstrates how you can structure a use case for inserting a new sample into your database. You can adapt and expand upon this template to document other use cases for your application.

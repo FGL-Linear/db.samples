@@ -2,7 +2,7 @@
 
 #### 1. Purpose:
 
--   Develop a laboratory sample management system to efficiently track and manage various types of samples, including supplier samples, lab-prepared samples, and sample mixtures.
+-   Develop a laboratory sample management system to efficiently track and manage various types of samples, primarily for the use of a single user (yourself), with the potential for future expansion to serve a larger user base within the organization.
 
 #### 2. Scope:
 
@@ -17,6 +17,14 @@
     -   Track the lineage of samples, including transformations and changes over time.
 
     -   Manage analyte values associated with each sample.
+
+-   The following functionalities are NOT within the scope of this project:
+
+    -   Sample Analysis and Reporting: Use cases related to analyzing sample data and generating reports, such as calculating aggregate statistics, trend analysis, or generating compliance reports.
+
+    -   Sample Disposal or Archiving: Use cases for managing the disposal or archiving of samples that are no longer needed for testing or analysis.
+
+    -   Sample Audit Trail: Tracking and auditing changes to sample records, including who made the change, when it was made, and the nature of the change.
 
 ### 3. Functional Requirements:
 
@@ -47,28 +55,20 @@
 
 #### 4. Non-Functional Requirements:
 
--   **Performance**:
-
-    -   The system should be responsive and able to handle a large volume of sample data efficiently.
-
 -   **Reliability**:
 
     -   Data integrity should be maintained, and the system should be robust against errors and failures.
-
--   **Security**:
-
-    -   Access control mechanisms should be implemented to ensure that only authorized users can view and modify sample data.
 
 -   **Usability**:
 
     -   The user interface should be intuitive and user-friendly, requiring minimal training for laboratory technicians to use effectively.
 
--   **Scalability**:
-
-    -   The system should be scalable to accommodate future growth in the number of samples and users.
-
 #### 5. Integration Requirements:
 
 -   **Database Integration**:
 
-    -   Integration with a DuckDB database to store and manage sample data efficiently.
+    -   Integration with an embedded SQL database to store and manage sample data efficiently. Options considered include DuckDB and SQLite.
+
+-   **Application Framework**:
+
+    -   Development of the application using R and Shiny framework for web-based interface.

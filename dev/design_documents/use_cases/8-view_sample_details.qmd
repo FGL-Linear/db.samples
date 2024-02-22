@@ -1,0 +1,22 @@
+### Use Case 8: View Sample Details
+
+#### Actors:
+- Laboratory Technician: Responsible for viewing detailed information about samples.
+
+#### Preconditions:
+- The user has successfully retrieved a sample using the search and retrieval functionality.
+
+#### Main Success Scenario:
+1. The laboratory technician selects a sample from the list of retrieved samples.
+2. The application displays detailed information about the selected sample, including its category, supplier, lot details, associated values, and any additional attributes.
+3. The technician reviews the sample details to obtain the necessary information for further analysis or action.
+
+#### Alternate Paths:
+- **No Sample Selected**: If the technician attempts to view sample details without selecting a specific sample, the application prompts them to choose a sample from the list.
+
+#### Postconditions:
+- The technician successfully views detailed information about the selected sample.
+
+#### Examples:
+- **Example 1**: After searching for samples supplied by "Supplier B," the laboratory technician selects a specific sample from the search results to view its details, including lot number, date of manufacture, and expiry date.
+- **Example 2**: The technician retrieves a sample identified by its unique sample ID and reviews its associated values and measurements stored in the system.

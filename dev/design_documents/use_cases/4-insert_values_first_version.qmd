@@ -1,0 +1,56 @@
+
+**Use Case 4: Insert Analyte Values for Sample (Version 1)**
+
+**Actor**: Laboratory Technician
+
+**Description**: This use case describes the process of inserting
+analyte values for a sample for the first time, creating the initial
+version (version 1) of analyte values associated with the sample.
+
+**Preconditions**: - The user is authenticated and authorized to insert
+analyte values for samples. - The sample for which analyte values are to
+be inserted exists in the system. - All parameters (measurement
+procedures) for which values are to be inserted have been registered in
+the database.
+
+**Basic Flow**: 1. **Initiate Analyte Value Insertion**: - The user
+selects the option to insert analyte values for a sample in the system.
+
+2.  **Select Sample**:
+    -   The system presents a list of samples for which analyte values
+        can be inserted.
+    -   The user selects the sample for which they want to insert
+        analyte values.
+3.  **Enter Analyte Values**:
+    -   The system retrieves all registered parameters (measurement
+        procedures) from the database.
+    -   The system displays a table with columns for parameters and
+        corresponding value fields.
+    -   The user enters the values for each parameter, ensuring accuracy
+        and completeness.
+4.  **Review and Confirm**:
+    -   The system displays a summary of the entered analyte values for
+        review.
+    -   The user verifies the correctness of the entered values.
+    -   The user confirms the insertion of analyte values for the
+        sample.
+5.  **Save Analyte Values**:
+    -   The system saves the entered analyte values for the sample as
+        version 1.
+    -   The system assigns a unique identifier (version number) to the
+        set of analyte values for traceability.
+
+**Alternate Flows**: - **Cancel Analyte Value Insertion**: - At any step
+during the analyte value insertion process, the user may choose to
+cancel the operation. - The system aborts the insertion process and
+returns the user to the previous screen.
+
+**Postconditions**: - The analyte values are successfully inserted for
+the sample as version 1. - The system maintains a record of the inserted
+analyte values, associating them with the sample and version number.
+
+**Exceptions**: - **Invalid Input**: - If the user provides invalid or
+incomplete values for any parameter, the system prompts for correction
+and validation. - **System Error**: - If the system encounters an error
+during the analyte value insertion process, an error message is
+displayed, and the user is prompted to retry or contact support.
